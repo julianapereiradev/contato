@@ -2057,7 +2057,6 @@ body.is-preload #wrapper {
 #main {
   position: relative;
   overflow: hidden;
-  width: 100%;
   background: #ffffff;
   box-shadow: 0px 1px 0px 0px rgba(0, 0, 0, 0.25);
   -moz-transition: min-height 0.5s ease-in-out, max-height 0.5s ease-in-out;
@@ -2089,7 +2088,8 @@ body.is-preload #wrapper {
 
 #main > .panel.intro {
   padding: 0;
-  height: 39em;
+  width: 100%;
+  height: 400px;
   display: -moz-flex;
   display: -webkit-flex;
   display: -ms-flex;
@@ -2216,12 +2216,13 @@ body.is-preload #wrapper {
     -webkit-flex-direction: column;
     -ms-flex-direction: column;
     flex-direction: column;
-    height: auto;
+    width: 100%;
+    height: 800px;
   }
 
   #main > .panel.intro .pic {
-    height: 40em;
     width: 100%;
+    height: 100%;
   }
 
   #main > .panel.intro header {
@@ -2231,8 +2232,18 @@ body.is-preload #wrapper {
 }
 
 @media screen and (max-width: 736px) {
+  #main > .panel.intro {
+    -moz-flex-direction: column;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    width: 100%;
+    height: 650px;
+  }
+
   #main > .panel.intro .pic {
-    height: 39em;
+    width: 100%;
+    height: 600px;
   }
 
   #main > .panel.intro header {
